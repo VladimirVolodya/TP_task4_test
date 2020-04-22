@@ -23,7 +23,7 @@ jobs:
         GOOGLE_TEST_DIR=googletest cmake -DCMAKE_INSTALL_PREFIX=$INSTALL_PREFIX ..
         make
         make install
-        ls -la ..
+        ls -la ../output
         
         
 
