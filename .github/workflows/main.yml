@@ -16,13 +16,13 @@ jobs:
         mkdir 3rdparty
         mkdir build
         mkdir output
-        INSTALL_PREFIX=$(pwd)/output
+        CMAKE_INSTALL_PREFIX=$(pwd)/output
         ls -la
         echo $INSTALL_PREFIX
         cd 3rdparty
         git clone https://github.com/google/googletest.git
         cd ../build
-        CMAKE_INSTALL_PREFIX=$INSTALL_PREFIX GOOGLE_TEST_DIR=googletest cmake ..
+        ORIGIN=$CMAKE_INSTALL_PREFIX GOOGLE_TEST_DIR=googletest cmake ..
         make
         make install
         
