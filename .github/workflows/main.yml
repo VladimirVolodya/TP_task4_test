@@ -16,7 +16,7 @@ jobs:
         mkdir 3rdparty
         mkdir build
         mkdir output
-        INSTALL_PREFIX='pwd'/output
+        INSTALL_PREFIX=$(pwd)/output
         ls -la
         echo $INSTALL_PREFIX
         cd 3rdparty
