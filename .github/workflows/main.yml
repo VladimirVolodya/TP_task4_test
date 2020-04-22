@@ -19,6 +19,7 @@ jobs:
         git clone https://github.com/google/googletest.git
         cd ../build
         GOOGLE_TEST_DIR=googletest cmake ..
+        chmod +rw /usr/local
         make
         make install
         
