@@ -1,11 +1,7 @@
 
 name: task4
 
-on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+on: [push]
 
 jobs:
   main-job:
@@ -17,7 +13,7 @@ jobs:
     # Runs a single command using the runners shell
     - name: Build
       run: |
-        apt-get install git
+        apt install git
         cd TP_task4_test
         mkdir 3rdparty
         
