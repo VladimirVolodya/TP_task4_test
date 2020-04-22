@@ -13,6 +13,7 @@ jobs:
     # Runs a single command using the runners shell
     - name: Build
       run: |
+        ls -la
         cd TP_task4_test
         mkdir 3rdparty
         cd 3rdparty
