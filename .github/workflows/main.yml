@@ -26,7 +26,7 @@ jobs:
         
     - uses: akhtyamovpavel/ActionGtestReport@v0.0.9
       with: 
-        exec-path:  bin/CTestExe
+        exec-path:  /home/runner/work/TP_task4_test/TP_task4_test/bin/CTestExe
         report-path: test_report.xml
         working-directory: /
     - name: Test
