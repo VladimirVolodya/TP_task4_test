@@ -22,7 +22,6 @@ jobs:
         GOOGLE_TEST_DIR=googletest cmake -DCMAKE_INSTALL_PREFIX=$INSTALL_PREFIX ..
         make
         make install
-        ls -la bin/
         
 #     - uses: akhtyamovpavel/ActionGtestReport@v0.0.9
 #       with: 
@@ -33,5 +32,6 @@ jobs:
     # Runs a set of commands using the runners shell
     - name: Run a multi-line script
       run: |
+        ls -la bin/
         echo Add other actions to build,
         echo test, and deploy your project.
