@@ -10,7 +10,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    # Runs a single command using the runners shell
     - name: Build
       run: |
         mkdir 3rdparty
@@ -25,6 +24,10 @@ jobs:
         make install
         ls -la ../output
         
+#     - uses: akhtyamovpavel/ActionGtestReport@v0.0.9
+#       with: 
+      
+    - name: Test
         
 
     # Runs a set of commands using the runners shell
