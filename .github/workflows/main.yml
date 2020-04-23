@@ -28,6 +28,6 @@ jobs:
       with: 
         exec-path:  /home/runner/work/TP_task4_test/TP_task4_test/bin/CTestExe
         report-path: test_report.xml
-        working-directory: /
+        working-directory: /home/runner/work/TP_task4_test/TP_task4_test
     - name: Test
       run: ls -la
