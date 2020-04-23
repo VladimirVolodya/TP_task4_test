@@ -15,8 +15,6 @@ jobs:
         mkdir 3rdparty
         mkdir build
         mkdir output
-        touch output/test_report.xml
-        chmod ogu+rw output/test_report.xml
         MAIN_DIR=$(pwd)
         cd 3rdparty
         git clone https://github.com/google/googletest.git
@@ -28,8 +26,8 @@ jobs:
         
     - uses: akhtyamovpavel/ActionGtestReport@v0.0.9
       with: 
-        exec-path:  /home/runner/work/TP_task4_test/TP_task4_test/bin/CTestExe
-        report-path: output/test_report.xml
-        working-directory: /
+        exec-path:  bin/CTestExe
+        report-path: test_report.xml
+        working-directory: /home/runner/work/TP_task4_test/TP_task4_test/
     - name: Test
       run: ls -la
