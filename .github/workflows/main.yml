@@ -35,4 +35,5 @@ jobs:
       run : |
         cd build/bin
         echo $(pwd)
+        ls -la
         ls -la ../../akhtyamovpavel-output/
