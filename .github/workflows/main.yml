@@ -30,10 +30,3 @@ jobs:
         exec-path:  /home/runner/work/TP_task4_test/TP_task4_test/bin/CTestExe
         report-path: test-report
         working-directory: /
-      
-    - name: Test
-      run : |
-        ls -la bin/
-        echo $(pwd)
-        ls -la
-        ls -la akhtyamovpavel-output/
