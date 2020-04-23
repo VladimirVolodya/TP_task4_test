@@ -22,7 +22,7 @@ jobs:
         GOOGLE_TEST_DIR=googletest cmake -DCMAKE_INSTALL_PREFIX=$INSTALL_PREFIX ..
         make
         make install
-        ls -la ../output/exe
+        ls -la ../output/exe/bin
         
 #     - uses: akhtyamovpavel/ActionGtestReport@v0.0.9
 #       with: 
