@@ -27,7 +27,7 @@ jobs:
 #     - uses: akhtyamovpavel/ActionGtestReport@v0.0.9
 #       with: 
       
-    - name: Test
+#     - name: Test
         
 
     # Runs a set of commands using the runners shell
