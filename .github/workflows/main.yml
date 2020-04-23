@@ -35,4 +35,5 @@ jobs:
       run : |
         ls -la bin/
         echo $(pwd)
-        ls -la ../akhtyamovpavel-output/
+        ls -la
+        ls -la akhtyamovpavel-output/
