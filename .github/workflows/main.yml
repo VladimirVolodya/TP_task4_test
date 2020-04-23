@@ -15,8 +15,6 @@ jobs:
         mkdir 3rdparty
         mkdir build
         mkdir output
-        touch output/test_report
-        chmod ugo+rw output/test_report
         MAIN_DIR=$(pwd)
         cd 3rdparty
         git clone https://github.com/google/googletest.git
@@ -30,6 +28,6 @@ jobs:
       with: 
         exec-path:  /home/runner/work/TP_task4_test/TP_task4_test/bin/CTestExe
         report-path: test_report
-        working-directory: /home/runner/work/TP_task4_test/TP_task4_test/
+        working-directory: /
     - name: Test
       run: ls -la
