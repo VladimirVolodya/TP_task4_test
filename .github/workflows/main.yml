@@ -32,4 +32,4 @@ jobs:
       
     - name: Test
       run : |
-        ls -la bin/
+        ls -la
