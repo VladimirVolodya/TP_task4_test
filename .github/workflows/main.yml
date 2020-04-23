@@ -15,7 +15,7 @@ jobs:
         mkdir 3rdparty
         mkdir build
         mkdir output
-        touch output/test-report
+        touch output/test_report
         chmod ugo+rw output/test_report
         MAIN_DIR=$(pwd)
         cd 3rdparty
