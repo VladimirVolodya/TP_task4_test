@@ -16,6 +16,7 @@ jobs:
         mkdir build
         mkdir output
         touch test-report
+        chmod +wr test-report
         MAIN_DIR=$(pwd)
         cd 3rdparty
         git clone https://github.com/google/googletest.git
