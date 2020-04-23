@@ -33,7 +33,6 @@ jobs:
       
     - name: Test
       run : |
-        cd build/bin/
+        ls -la bin/
         echo $(pwd)
-        ls -la
         ls -la ../../akhtyamovpavel-output/
